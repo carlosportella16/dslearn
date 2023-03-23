@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
@@ -23,16 +25,21 @@ public class Notification implements Serializable{
 	private Boolean read;
 	private String route;
 	
+	@ManyToOne
+	@JoinColumn(name = "user_id")
+	private User user;
+	
 	public Notification() {
 		
 	}
-	
-	public Notification(Long id, String text, Instant moment, Boolean read, String route) {
+
+	public Notification(Long id, String text, Instant moment, Boolean read, String route, User user) {
 		this.id = id;
 		this.text = text;
 		this.moment = moment;
 		this.read = read;
 		this.route = route;
+		this.user = user;
 	}
 
 	public Long getId() {
@@ -73,6 +80,14 @@ public class Notification implements Serializable{
 
 	public void setRoute(String route) {
 		this.route = route;
+	}
+
+	public User getUser() {
+		return user;
+	}
+
+	public void setUser(User user) {
+		this.user = user;
 	}
 
 	@Override
