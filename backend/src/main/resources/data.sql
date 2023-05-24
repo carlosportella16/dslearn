@@ -23,3 +23,7 @@ INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Novo c
 INSERT INTO tb_resource (title, description, position, img_Url, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Url, type, offer_id) VALUES ('Forum', 'Tire suas dúvidas', 2, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Url, type, offer_id) VALUES ('Lives', 'Aulas exclusivas', 3, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 0, 1);
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 1', 'Neste capítulo vamos iniciar', 1, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 2', 'Neste capítulo vamos continuar', 2, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Capitulo 3', 'Neste capítulo vamos finalizar', 3, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 1, 2);
