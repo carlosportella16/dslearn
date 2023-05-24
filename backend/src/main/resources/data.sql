@@ -18,4 +18,8 @@ INSERT INTO tb_course (name, img_Uri, img_Gray_Uri) VALUES ('Bootcamp HTML', 'ht
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('1.0',TIMESTAMP WITH TIME ZONE '2022-11-20T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-11-20T03:00:00Z', 1); 
 INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0',TIMESTAMP WITH TIME ZONE '2022-11-20T03:00:00Z', TIMESTAMP WITH TIME ZONE '2023-11-20T03:00:00Z', 1); 
 
-INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('notification', TIMESTAMP WITH TIME ZONE '2023-02-20T03:00:00Z', false, 'courses-spring', 1);
+INSERT INTO tb_notification (text, moment, read, route, user_id) VALUES ('Novo curso', TIMESTAMP WITH TIME ZONE '2022-11-20T03:00:00Z', FALSE, 'ROUTE LINK', 1);
+
+INSERT INTO tb_resource (title, description, position, img_Url, type, offer_id) VALUES ('Trilha HTML', 'Trilha principal do curso', 1, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 1, 1);
+INSERT INTO tb_resource (title, description, position, img_Url, type, offer_id) VALUES ('Forum', 'Tire suas dúvidas', 2, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 2, 1);
+INSERT INTO tb_resource (title, description, position, img_Url, type, offer_id) VALUES ('Lives', 'Aulas exclusivas', 3, 'https://img.freepik.com/free-icon/man-presenting-stats-graphic-monitor-screen_318-63693.jpg', 0, 1);
